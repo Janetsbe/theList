@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		D178CA3C1A3F70600031ABAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D178CA3B1A3F70600031ABAB /* AppDelegate.swift */; };
 		D178CA3F1A3F70600031ABAB /* theList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D178CA3D1A3F70600031ABAB /* theList.xcdatamodeld */; };
-		D178CA411A3F70600031ABAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D178CA401A3F70600031ABAB /* ViewController.swift */; };
 		D178CA441A3F70600031ABAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D178CA421A3F70600031ABAB /* Main.storyboard */; };
 		D178CA461A3F70600031ABAB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D178CA451A3F70600031ABAB /* Images.xcassets */; };
 		D178CA491A3F70600031ABAB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D178CA471A3F70600031ABAB /* LaunchScreen.xib */; };
 		D178CA551A3F70600031ABAB /* theListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D178CA541A3F70600031ABAB /* theListTests.swift */; };
 		D178CA601A3F73050031ABAB /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D178CA5F1A3F73050031ABAB /* FacebookSDK.framework */; };
+		D178CC461A3FAAB80031ABAB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D178CC441A3FAAB80031ABAB /* HomeViewController.swift */; };
+		D178CC471A3FAAB80031ABAB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D178CC451A3FAAB80031ABAB /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +33,6 @@
 		D178CA3A1A3F70600031ABAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D178CA3B1A3F70600031ABAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D178CA3E1A3F70600031ABAB /* theList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = theList.xcdatamodel; sourceTree = "<group>"; };
-		D178CA401A3F70600031ABAB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D178CA431A3F70600031ABAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D178CA451A3F70600031ABAB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D178CA481A3F70600031ABAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -40,6 +40,9 @@
 		D178CA531A3F70600031ABAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D178CA541A3F70600031ABAB /* theListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = theListTests.swift; sourceTree = "<group>"; };
 		D178CA5F1A3F73050031ABAB /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+		D178CC441A3FAAB80031ABAB /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D178CC451A3FAAB80031ABAB /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D178CC481A3FAB1D0031ABAB /* Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridge-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +98,7 @@
 		D178CA391A3F70600031ABAB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D178CC481A3FAB1D0031ABAB /* Bridge-Header.h */,
 				D178CA451A3F70600031ABAB /* Images.xcassets */,
 				D178CA3D1A3F70600031ABAB /* theList.xcdatamodeld */,
 				D178CA471A3F70600031ABAB /* LaunchScreen.xib */,
@@ -123,7 +127,8 @@
 		D178CA5E1A3F727E0031ABAB /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				D178CA401A3F70600031ABAB /* ViewController.swift */,
+				D178CC441A3FAAB80031ABAB /* HomeViewController.swift */,
+				D178CC451A3FAAB80031ABAB /* LoginViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -243,9 +248,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D178CA411A3F70600031ABAB /* ViewController.swift in Sources */,
+				D178CC471A3FAAB80031ABAB /* LoginViewController.swift in Sources */,
 				D178CA3C1A3F70600031ABAB /* AppDelegate.swift in Sources */,
 				D178CA3F1A3F70600031ABAB /* theList.xcdatamodeld in Sources */,
+				D178CC461A3FAAB80031ABAB /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +382,7 @@
 				INFOPLIST_FILE = theList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "theList/Bridge-Header.h";
 			};
 			name = Debug;
 		};
@@ -390,6 +397,7 @@
 				INFOPLIST_FILE = theList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "theList/Bridge-Header.h";
 			};
 			name = Release;
 		};
@@ -446,6 +454,7 @@
 				D178CA5A1A3F70600031ABAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D178CA5B1A3F70600031ABAB /* Build configuration list for PBXNativeTarget "theListTests" */ = {
 			isa = XCConfigurationList;
@@ -454,6 +463,7 @@
 				D178CA5D1A3F70600031ABAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
