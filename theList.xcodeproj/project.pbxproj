@@ -14,6 +14,7 @@
 		D178CA461A3F70600031ABAB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D178CA451A3F70600031ABAB /* Images.xcassets */; };
 		D178CA491A3F70600031ABAB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D178CA471A3F70600031ABAB /* LaunchScreen.xib */; };
 		D178CA551A3F70600031ABAB /* theListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D178CA541A3F70600031ABAB /* theListTests.swift */; };
+		D178CA601A3F73050031ABAB /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D178CA5F1A3F73050031ABAB /* FacebookSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		D178CA4E1A3F70600031ABAB /* theListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = theListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D178CA531A3F70600031ABAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D178CA541A3F70600031ABAB /* theListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = theListTests.swift; sourceTree = "<group>"; };
+		D178CA5F1A3F73050031ABAB /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D178CA601A3F73050031ABAB /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +64,8 @@
 		D178CA2D1A3F70600031ABAB = {
 			isa = PBXGroup;
 			children = (
+				D178CA421A3F70600031ABAB /* Main.storyboard */,
+				D178CA5F1A3F73050031ABAB /* FacebookSDK.framework */,
 				D178CA381A3F70600031ABAB /* theList */,
 				D178CA511A3F70600031ABAB /* theListTests */,
 				D178CA371A3F70600031ABAB /* Products */,
@@ -79,12 +84,9 @@
 		D178CA381A3F70600031ABAB /* theList */ = {
 			isa = PBXGroup;
 			children = (
-				D178CA3B1A3F70600031ABAB /* AppDelegate.swift */,
-				D178CA401A3F70600031ABAB /* ViewController.swift */,
-				D178CA421A3F70600031ABAB /* Main.storyboard */,
-				D178CA451A3F70600031ABAB /* Images.xcassets */,
-				D178CA471A3F70600031ABAB /* LaunchScreen.xib */,
-				D178CA3D1A3F70600031ABAB /* theList.xcdatamodeld */,
+				D178CA631A3F73410031ABAB /* Utility Classes */,
+				D178CA621A3F73240031ABAB /* Model Classes */,
+				D178CA5E1A3F727E0031ABAB /* View Controllers */,
 				D178CA391A3F70600031ABAB /* Supporting Files */,
 			);
 			path = theList;
@@ -93,6 +95,9 @@
 		D178CA391A3F70600031ABAB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D178CA451A3F70600031ABAB /* Images.xcassets */,
+				D178CA3D1A3F70600031ABAB /* theList.xcdatamodeld */,
+				D178CA471A3F70600031ABAB /* LaunchScreen.xib */,
 				D178CA3A1A3F70600031ABAB /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -113,6 +118,29 @@
 				D178CA531A3F70600031ABAB /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D178CA5E1A3F727E0031ABAB /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D178CA401A3F70600031ABAB /* ViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		D178CA621A3F73240031ABAB /* Model Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Model Classes";
+			sourceTree = "<group>";
+		};
+		D178CA631A3F73410031ABAB /* Utility Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D178CA3B1A3F70600031ABAB /* AppDelegate.swift */,
+			);
+			name = "Utility Classes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +274,7 @@
 				D178CA431A3F70600031ABAB /* Base */,
 			);
 			name = Main.storyboard;
+			path = theList;
 			sourceTree = "<group>";
 		};
 		D178CA471A3F70600031ABAB /* LaunchScreen.xib */ = {
@@ -340,6 +369,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FacebookSDK",
+				);
 				INFOPLIST_FILE = theList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -350,6 +383,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FacebookSDK",
+				);
 				INFOPLIST_FILE = theList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
