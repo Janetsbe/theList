@@ -8,6 +8,21 @@
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
 	<string>refactorTheList.$(PRODUCT_NAME:rfc1034identifier)</string>
+	<key>FacebookAppID</key>
+	<string>337951799741631</string>
+	<key>FacebookDisplayName</key>
+	<string>the_List</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>337951799741631</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
