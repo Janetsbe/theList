@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		424F74021A3FB80E000F17CD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424F74011A3FB80E000F17CD /* HomeViewController.swift */; };
+		424F74041A3FB819000F17CD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424F74031A3FB819000F17CD /* LoginViewController.swift */; };
 		D178CA3C1A3F70600031ABAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D178CA3B1A3F70600031ABAB /* AppDelegate.swift */; };
 		D178CA3F1A3F70600031ABAB /* theList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D178CA3D1A3F70600031ABAB /* theList.xcdatamodeld */; };
-		D178CA411A3F70600031ABAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D178CA401A3F70600031ABAB /* ViewController.swift */; };
 		D178CA441A3F70600031ABAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D178CA421A3F70600031ABAB /* Main.storyboard */; };
 		D178CA461A3F70600031ABAB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D178CA451A3F70600031ABAB /* Images.xcassets */; };
 		D178CA491A3F70600031ABAB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D178CA471A3F70600031ABAB /* LaunchScreen.xib */; };
@@ -28,11 +29,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		424F74011A3FB80E000F17CD /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		424F74031A3FB819000F17CD /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		424F74051A3FB826000F17CD /* Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridge-Header.h"; sourceTree = SOURCE_ROOT; };
 		D178CA361A3F70600031ABAB /* theList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = theList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D178CA3A1A3F70600031ABAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D178CA3B1A3F70600031ABAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D178CA3E1A3F70600031ABAB /* theList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = theList.xcdatamodel; sourceTree = "<group>"; };
-		D178CA401A3F70600031ABAB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D178CA431A3F70600031ABAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D178CA451A3F70600031ABAB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D178CA481A3F70600031ABAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -95,6 +98,7 @@
 		D178CA391A3F70600031ABAB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				424F74051A3FB826000F17CD /* Bridge-Header.h */,
 				D178CA451A3F70600031ABAB /* Images.xcassets */,
 				D178CA3D1A3F70600031ABAB /* theList.xcdatamodeld */,
 				D178CA471A3F70600031ABAB /* LaunchScreen.xib */,
@@ -123,7 +127,8 @@
 		D178CA5E1A3F727E0031ABAB /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				D178CA401A3F70600031ABAB /* ViewController.swift */,
+				424F74031A3FB819000F17CD /* LoginViewController.swift */,
+				424F74011A3FB80E000F17CD /* HomeViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -243,9 +248,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D178CA411A3F70600031ABAB /* ViewController.swift in Sources */,
+				424F74041A3FB819000F17CD /* LoginViewController.swift in Sources */,
 				D178CA3C1A3F70600031ABAB /* AppDelegate.swift in Sources */,
 				D178CA3F1A3F70600031ABAB /* theList.xcdatamodeld in Sources */,
+				424F74021A3FB80E000F17CD /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +382,7 @@
 				INFOPLIST_FILE = theList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridge-Header.h";
 			};
 			name = Debug;
 		};
@@ -390,6 +397,7 @@
 				INFOPLIST_FILE = theList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridge-Header.h";
 			};
 			name = Release;
 		};
@@ -446,6 +454,7 @@
 				D178CA5A1A3F70600031ABAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D178CA5B1A3F70600031ABAB /* Build configuration list for PBXNativeTarget "theListTests" */ = {
 			isa = XCConfigurationList;
@@ -454,6 +463,7 @@
 				D178CA5D1A3F70600031ABAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
