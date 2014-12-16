@@ -16,6 +16,8 @@
 		D178CA601A3F73050031ABAB /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D178CA5F1A3F73050031ABAB /* FacebookSDK.framework */; };
 		D178CC461A3FAAB80031ABAB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D178CC441A3FAAB80031ABAB /* HomeViewController.swift */; };
 		D178CC471A3FAAB80031ABAB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D178CC451A3FAAB80031ABAB /* LoginViewController.swift */; };
+		D178CC4A1A3FB7190031ABAB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D178CC491A3FB7190031ABAB /* User.swift */; };
+		D178CC4C1A3FBA7E0031ABAB /* UserCoreDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D178CC4B1A3FBA7E0031ABAB /* UserCoreDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,8 @@
 		D178CC441A3FAAB80031ABAB /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D178CC451A3FAAB80031ABAB /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D178CC481A3FAB1D0031ABAB /* Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridge-Header.h"; sourceTree = "<group>"; };
+		D178CC491A3FB7190031ABAB /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D178CC4B1A3FBA7E0031ABAB /* UserCoreDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCoreDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +140,8 @@
 		D178CA621A3F73240031ABAB /* Model Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D178CC491A3FB7190031ABAB /* User.swift */,
+				D178CC4B1A3FBA7E0031ABAB /* UserCoreDataModel.swift */,
 			);
 			name = "Model Classes";
 			sourceTree = "<group>";
@@ -249,9 +255,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D178CC471A3FAAB80031ABAB /* LoginViewController.swift in Sources */,
+				D178CC4C1A3FBA7E0031ABAB /* UserCoreDataModel.swift in Sources */,
 				D178CA3C1A3F70600031ABAB /* AppDelegate.swift in Sources */,
 				D178CA3F1A3F70600031ABAB /* theList.xcdatamodeld in Sources */,
 				D178CC461A3FAAB80031ABAB /* HomeViewController.swift in Sources */,
+				D178CC4A1A3FB7190031ABAB /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
