@@ -8,12 +8,12 @@
 
 import UIKit;
 import Foundation;
+import CoreData;
 
 class LoginViewController: UIViewController, FBLoginViewDelegate {
     // IBOutlets
     
     @IBOutlet var facebookLoginView: FBLoginView!;
-
     @IBOutlet var createProfileView: UIView!
     
     
@@ -22,13 +22,28 @@ class LoginViewController: UIViewController, FBLoginViewDelegate {
     var wasLoggedOut = true;
     
     
-    // Inf
+    // Core Data
+    
+    var user : NSManagedObject!;
     
     
-
+    // placeholder data
+    
+    var fakeDescription : String = "This is a placeholder description.";
+    var fakeInterests : [String] = ["1", "2", "3"];
+    var fakeGender : String = "male"
+    
+    
+    // local facebook variables
+    var currentUser : FBGraphUser!;
+    @IBOutlet var currentUserProfilePicView : FBProfilePictureView!;
+    
     
     override func viewDidLoad() {
+        println("123")
         super.viewDidLoad();
+        
+        
         
         self.facebookLoginView.delegate = self;
         
@@ -39,25 +54,29 @@ class LoginViewController: UIViewController, FBLoginViewDelegate {
     
     func loginViewFetchedUserInfo(loginView: FBLoginView!, user: FBGraphUser!) {
         if(!isDoneFetchedUser) {
+            currentUser = user;
             isDoneFetchedUser = true;
-//            createProfileView.hidden = false;
             println(user.objectID);
         }
     }
     
-    func loginViewShowingLoggedInUser(loginView: FBLoginView!) {
-//
+    func loginViewShowingLoggedInUser(loginView: FBLoginView!){
+        println("you have logged in");
     }
 
     func loginViewShowingLoggedOutUser(loginView: FBLoginView!) {
         isDoneFetchedUser = false;
+        println("you have not logged in");
     }
     
     
-    @IBAction func createProfileButtonPressed(sender: AnyObject) {
-        
-        
+    @IBAction func createNewUserPressed(sender: AnyObject) {
+        //UserCoreDataModel.initializeNewUser(firstName : String, lastName : String, age : Int, facebookID : String, gender : String, descrip : String);
+        println(currentUser.first_name);
+        //currentUserProfilePicView.profileID = currentUser.objectID;
     }
+    
+    
     
     
     override func didReceiveMemoryWarning() {
